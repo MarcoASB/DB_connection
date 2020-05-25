@@ -27,9 +27,20 @@ FROM employees e
 	INNER JOIN departments d
 		ON d.dept_no = de.dept_no
 		
--- 5. List all employees whose first name is "Hercules" and last names begin with "B."
--- 6. List all employees in the Sales department, including their employee number, last name, 
--- first nameand department name.
+-- 5. "Hercules B."
+SELECT * 
+FROM employees
+WHERE first_name = 'Hercules' AND last_name LIKE 'B%'
+
+-- 6. Sales department
+SELECT de.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees e
+	INNER JOIN dept_emp de 
+		ON de.emp_no = e.emp_no
+	INNER JOIN departments d
+		ON d.dept_no = de.dept_no
+WHERE dept_name = 'Sales'
+
 -- 7. List all employees in the Sales and Development departments, including their employee number, 
 -- last name, first name, and department name.
 -- 8. In descending order, list the frequency count of employee last names, 
