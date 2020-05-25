@@ -1,5 +1,7 @@
 # Employee Database
 
+![sql.png](sql.png)
+
 Research project on employees of a corporation from the 1980s and 1990s. 
 Analysis of databases of employees.
 Perform: 
