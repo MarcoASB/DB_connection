@@ -10,5 +10,6 @@
 ###  2. Data Engineering
 * Designing the tables to hold data in the CSV's (with PK and FK)
 * Import the CSV's into a SQL database to make analysis
+* Import at the end tables with foreign keys (FK)
 ###  3. Data Analysis
 
