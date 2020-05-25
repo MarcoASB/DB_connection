@@ -8,6 +8,7 @@
 * Inspection of CSV's and sketching out an ERD of the tables [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com) 
 * ![QuickDBD.png](QuickDBD.png)
 ###  2. Data Engineering
-* Designing the tables to hold data in the CSV's and import the CSV's into a SQL database to make analysis
+* Designing the tables to hold data in the CSV's (with PK and FK)
+* Import the CSV's into a SQL database to make analysis
 ###  3. Data Analysis
 
