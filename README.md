@@ -7,7 +7,7 @@ Analysis of databases of employees.
 Perform: 
 
   1. Data Modeling
-      * Inspection of CSV's and go to [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com) to sketch out an ERD of the tables needed.    
+      * Inspection of CSV's and sketching out an ERD of the taables [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com)   
   2. Data Engineering
   3. Data Analysis
   
