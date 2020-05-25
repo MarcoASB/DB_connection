@@ -9,6 +9,6 @@ Perform:
   1. Data Modeling
       * Inspection of CSV's and sketching out an ERD of the tables [http://www.quickdatabasediagrams.com](http://www.quickdatabasediagrams.com)   
   2. Data Engineering
+      * Designing the tables to hold data in the CSVs and import the CSVs into a SQL database to make analysis
   3. Data Analysis
-  
-By Designing the tables to hold data in the CSVs and import the CSVs into a SQL database to make analysis
+
