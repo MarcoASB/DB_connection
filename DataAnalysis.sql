@@ -1,5 +1,5 @@
 -- 1. Salary by employee.
-SELECT e.emp_no, e.last_name, e.first_name, e.gender, s.salary
+SELECT e.emp_no AS Number_of_employee, e.last_name, e.first_name, e.gender, s.salary
 FROM employees e 
 	INNER JOIN salaries s
 		ON s.emp_no = e.emp_no
@@ -10,9 +10,15 @@ FROM employees
 WHERE hire_date 
 	BETWEEN '1986-01-01' AND '1986-12-31'
 	
--- 3. List the manager of each department with the following information: 
--- department number, department name, the manager's employee number, last name, first name
--- and start and end employment dates.
+-- 3. Manager of each department.
+SELECT d.dept_no AS Department_Number, d.dept_name AS Department_Name, dm.emp_no AS Managers_employee_number,
+	   e.last_name, e.first_name, dm.from_date, dm.to_date
+FROM dept_manager dm
+	INNER JOIN departments d
+		ON d.dept_no = dm.dept_no
+	INNER JOIN employees e
+		ON e.emp_no = dm.emp_no
+
 -- 4. List the department of each employee with the following information: 
 -- employee number, last name, first name, and department name.
 -- 5. List all employees whose first name is "Hercules" and last names begin with "B."
